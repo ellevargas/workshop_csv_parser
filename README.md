@@ -16,19 +16,19 @@ For more information about the CSV format:
 * [Official spec (RFC 4180)](https://tools.ietf.org/html/rfc4180)
 
 
-#### Steps
+#### Steps:
 
-* Write some code that can parse the above sample CSV file. Test file: dogs.csv
+1. Write some code that can parse the above sample CSV file. Test file: dogs.csv
 
-* While the C in CSV stands for comma, not all CSV files use `,` as the delimiter between values in a row. Some common alternatives are tabs (`\t`) or spaces (` `). Modify your CSV parsing code so that the caller of your code can specify an alternative delimiter. Test file: dinosaurs.csv
+1. While the C in CSV stands for comma, not all CSV files use `,` as the delimiter between values in a row. Some common alternatives are tabs (`\t`) or spaces (` `). Modify your CSV parsing code so that the caller of your code can specify an alternative delimiter. Test file: dinosaurs.csv
 
-* When a value in a CSV file contains the delimiter, it needs to be quoted, typically with the double quote character (`"`). Update your parser to handle quoted values. Test file: cat_breeds.csv
+1. When a value in a CSV file contains the delimiter, it needs to be quoted, typically with the double quote character (`"`). Update your parser to handle quoted values. Test file: cat_breeds.csv
 
-* While the vast majority of CSV files will use double quotes (`"`) as their quote character, this is not necessarily true. Modify your parser so that the caller of your code can specify an alternate quote character. Test file: contacts.csv
+1. While the vast majority of CSV files will use double quotes (`"`) as their quote character, this is not necessarily true. Modify your parser so that the caller of your code can specify an alternate quote character. Test file: contacts.csv
 
-* If a quoted value contains the quote character, it needs to be escaped by doubling the quote character. Update your CSV parser to handle this. Test file: routes.csv
+1. If a quoted value contains the quote character, it needs to be escaped by doubling the quote character. Update your CSV parser to handle this. Test file: routes.csv
 
-* While most CSV files have one record per line, some will have multi-line values, that is values that contain a newline character. Modify your parser to support this. Test file: cars.csv
+1. While most CSV files have one record per line, some will have multi-line values, that is values that contain a newline character. Modify your parser to support this. Test file: cars.csv
 
 
 #### Taking it further:
