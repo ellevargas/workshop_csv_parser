@@ -20,14 +20,12 @@ For more information about the CSV format:
 
 1. Write some code that can parse the sample CSV file above. Test file: dogs.csv
 
-One way this could work would be to write a method that does the following:
+  One way this could work would be to write a method that does the following:  
 
-```
->> csv_data = File.read("dogs.csv") ; csv_data.length
-=> 97
->> csv_parser(csv_data)
-=> [["name", "breed", "weight"], ["Francis", "Samoyed", "32"], ["Kieran", "Lab", "90"], ["Renata", "Coonhound", "29"], ["Ving", "Boxer", "51"], ["Brian", "Lab", "51"]]
-```
+  >> csv_data = File.read("dogs.csv") ; csv_data.length
+  => 97
+  >> csv_parser(csv_data)
+  => [["name", "breed", "weight"], ["Francis", "Samoyed", "32"], ["Kieran", "Lab", "90"], ["Renata", "Coonhound", "29"], ["Ving", "Boxer", "51"], ["Brian", "Lab", "51"]]
 
 1. While the C in CSV stands for comma, not all CSV files use `,` as the delimiter between values in a row. Some common alternatives are tabs (`\t`) or spaces (` `). Modify your parser so that the caller of your code can specify an alternative delimiter. Test file: dinosaurs.csv
 
