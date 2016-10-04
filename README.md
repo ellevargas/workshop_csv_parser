@@ -1,6 +1,6 @@
-Your task is to write a CSV parser.
+Your task is to write a CSV (Comma Separated Values) parser.
 
-A CSV is a plain text data format for storing tabular data. The files usually end with the `.csv` extension, and a typical CSV file might look like this:
+CSV is a plain text data format for storing tabular data. The files usually end with the `.csv` extension, and a typical CSV file might look like this:
 
 ```
 name,breed,weight
